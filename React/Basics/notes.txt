@@ -1,0 +1,38 @@
+Imperative: A programming model where we describe the steps to achieve our result.
+
+Declarative: A programming model where we describe the result we want to achieve.
+
+Component: A self-contained, reusable piece of our interface.
+
+
+Benefits of React - Declaritive and component based 
+
+---------------------------------------------------------------------------------------
+
+Virtual DOM - A react component will create a representation of its markup in JavaScript, using basic JavaScript data types, like objects, arrays, and strings. 
+This JavaScript representation of the DOM elements is called the Virtual DOM in react.
+
+DOM: (Document Object Model) The interface for managing the elements in an HTML page.
+Virtual DOM: A pure JavaScript representation of a DOM tree.
+
+
+----------------------------------------------------------------------------------------
+JSX: An extension to the JavaScript language that provides an XML syntax.
+Babel.js: A compiler that creates standard, compatible JavaScript from code that utilizes new JavaScript features and JSX
+
+React Create Funtion example:
+
+    React.createElement('a', {
+        href: "https://teamtreehouse.com"
+    }, "Treehouse");
+
+JSX - helps you build React.create calls 
+
+Updated:
+    var myLink = (
+        <a href="https://teamtreehouse.com">
+            Treehouse
+        </a>
+    );
+    
+By using a tool that understands JSX, we can translate a JSX tag into a React createElement call
