@@ -36,3 +36,7 @@ Updated:
     );
     
 By using a tool that understands JSX, we can translate a JSX tag into a React createElement call
+    Babel converts JSX to JavaScript
+    It also can translate features from later versions of JavaScript into a syntax compatible with 
+    older JavaScript engines
+    
