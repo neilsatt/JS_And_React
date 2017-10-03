@@ -1,0 +1,52 @@
+DIFFERENT KINDS OF OBJECTS -------------------------------------------------------------------------
+
+An Object is a container for values in the form of properties and functionality in the form of methods. 
+
+Objects
+- provide functionality through methods, which may or may not return values
+- provide data storage in properties
+- the name of a property is a key
+- the contents of a property is known as a value
+
+
+Types of Objects:
+    Native Objects - number, string, array, boolean
+
+    Host Objects (Web Browser) - document, console, Element
+    
+    Your Own Objects
+    
+State refers to the condition of all values at a particular point in time. 
+Benefits of creating an Object in Code:
+    - Hides complexities of how things work from the developer using your object
+    - Great for organizing code, keeping everything together for a specific object (Encapsulation)
+
+
+OBJECT LITERAL REVIEW  --------------------------------------------------------------------------
+
+Object Literals store the state of a thing.
+
+There are two ways to access properties on object literals, dot notation and square bracket notation.
+    
+Object Literal Example:
+    var person = {
+        name: "Lauren",
+        treehouseStudent: true
+    }
+    
+person.name;
+person.treehouseStudent;
+
+person["name"];  
+person["treehouseStudent"];
+    
+
+UNDERSTANDING THIS  -----------------------------------------------------------------------------
+
+var dice = {
+    sides: 6, // local scope, property of dice object 
+    roll: function diceRoll() {
+        var randomNumber = Math.floor(Math.random() * dice.sides) + 1;
+        console.log(randomNumber);
+    }
+}

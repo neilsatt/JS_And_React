@@ -1,0 +1,9 @@
+var dice = {
+    sides: 6, // local scope, property of dice object 
+    roll: function diceRoll() {
+        // 'this' refers to dice object, owner of function
+        var randomNumber = Math.floor(Math.random() * this.sides) + 1; 
+        return randomNumber;
+    }
+}
+
