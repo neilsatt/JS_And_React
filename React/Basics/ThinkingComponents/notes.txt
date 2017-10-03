@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------------
+PropTypes and DefaultProps
+
+PropTypes is an object that contains all of the keys a component can take, as well as a special type definition.
+
+DefaultProps
+
