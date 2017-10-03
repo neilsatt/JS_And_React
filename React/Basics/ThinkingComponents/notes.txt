@@ -5,3 +5,8 @@ PropTypes is an object that contains all of the keys a component can take, as we
 
 DefaultProps
 
+--------------------------------------------------------------------------------------
+
+Composition: A method of combining many smaller or simpler pieces to create a larger piece.
+
+Decompose: Break a large component in to smaller components that can be composed together.
