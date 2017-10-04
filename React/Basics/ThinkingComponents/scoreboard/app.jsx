@@ -1,3 +1,22 @@
+// Create a players array 
+var PLAYERS = [
+    {
+       name: "Jim Hoskins", 
+       score: 31,
+        id: 1,
+    },
+    {
+       name: "Bill Ramy", 
+       score: 38,
+        id: 2,
+    },
+    {
+       name: "Ted Krale", 
+       score: 41,
+        id: 3,
+    },    
+];
+
 function Header(props){
     return (
         <div className="header">
@@ -47,8 +66,10 @@ function Application(props) {
     <div className="scoreboard">
           <Header title={props.title} />
           <div className="players">
-              <Player name="Jim Hoskins" score={31} />
-              <Player name="Andres Chalkley" score={33} />
+              {props.players.map(function(player) {
+                 return <Player name={player.name} score={player.score} key={player.id}/>
+              })}
+
           </div>
 
     </div>
@@ -58,10 +79,15 @@ function Application(props) {
 
 Application.propTypes = {
     title: React.PropTypes.string,
+    players: React.PropTypes.arrayOf(React.PropTypes.shape({
+        name: React.PropTypes.string.isRequired,
+        score: React.PropTypes.number.isRequired,  
+        id: React.PropTypes.number.isRequired,
+    })).isRequired,
 };
 
 Application.defaultProps = {
     title: "Scoreboard",
 }
 
-ReactDOM.render(<Application />, document.getElementById('container'));
+ReactDOM.render(<Application players={PLAYERS}/>, document.getElementById('container'));
