@@ -1,0 +1,33 @@
+Constructors - If you're making a lot of similar objects you can use a constructor function 
+to generate new objects of the same kind.
+
+Constructors:
+    - Describe how an object should be created
+    - Create Similar objects
+    - Each object created is an instance of that object type
+    
+    
+Example: 
+
+    function Contact(name, email) {
+    this.name = name;
+    this.email = email;
+    }
+    
+    // this inside of the constructor means a new instance of the object
+    
+    var contact1 = new Contact('Bill', 'bill@hotmail.com')
+    var contact2 = new Contact('fred', 'fred@hotmail.com')
+    
+    Object examples:
+    
+    Media Player
+        - playlist objects
+        - song object
+    
+    Adventure Game 
+        - player object
+        - monster object
+        - level object
+        
+    
