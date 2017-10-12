@@ -1,0 +1,23 @@
+Song Properties Needed
+- Title
+- Artist
+- Duraction
+- isPlaying
+
+Song Methods Needed
+- play
+- stop
+- toHTML 
+
+-------------------------------
+
+Playlist Properties
+- songs
+- nowPlayingIndex
+
+Playlist Methods 
+- add
+- play
+- next
+- stop
+- renderInElement // display playlist to page

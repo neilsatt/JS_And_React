@@ -46,4 +46,41 @@ function Dice(sides){
 }
    
 var dice = new Dice(6);
+
+------------------------------------------------------------------------------------
+Methods with Prototypes
+    - Every time you create a new instance with 'new', it takes more memory/space on your computer
     
+Update to Dice Constructor
+    // separate anonymous function 
+    function diceRoll() {
+        var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+        return randomNumber;
+    }
+    
+    function Dice(sides){
+        this.sides = sides;
+        this.roll = diceRoll;
+    }
+    
+    var dice = new Dice(6);
+    var dice10 = new Dice(10);
+    
+    console.log(dice.roll === dice10.roll) // false
+    
+      //  JavaScript provides a way to organize our code with constructor functions, and that
+        with a special property called prototype.
+        
+      // Updated code
+       Dice.prototype.roll = function diceRoll() {
+            var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+            return randomNumber;
+       }
+        
+    
+       // When you call Dice.roll, it will try to call it on the object first
+       // If it's not there, it will check its prototype 
+       
+       var dice = new Dice(6);
+       var dice10 = new Dice(10);
+       console.log(dice.roll === dice10.roll) // true, due to prototype
