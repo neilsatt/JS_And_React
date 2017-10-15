@@ -3,10 +3,12 @@ var playlist = new Playlist();
 var here = new Song("Here", "The Bubs", "2:54");
 var whyNow = new Song("Why Now", "Hibby Town", "4:54");
 var sideways = new Song("Sideways", "The Ranchers", "3:34");
+var kiss = new Song("Kiss", "Price", "3:24");
 
 playlist.add(here);
 playlist.add(whyNow);
 playlist.add(sideways);
+playlist.add(kiss);
 
 var playlistElement = document.getElementById("playlist");
 
