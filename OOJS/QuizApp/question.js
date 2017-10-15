@@ -7,7 +7,7 @@ function Question(text, choices, answer) {
     this.answer = answer;
 }
 
-//
+// Answer Check 
 Question.prototype.isCorrectAnswer = function (choice) {
     return this.answer === choice;
 }
