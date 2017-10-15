@@ -1,17 +1,13 @@
 function Song(title, artist, duration) {
-    this.title = title;
+    Media.call(this, title, duration); // define this
     this.artist = artist;
-    this.duration = duration;
-    this.isPlaying = false; // default
 }
 
-Song.prototype.play = function() {
-  this.isPlaying = true;
-};
+//  Set up prototype chain (Creates inheritance in JS)
+//  This copies the Properties and Methods references (from the Media's prototype), 
+//  to the song's prototype.
+Song.prototype = Object.create(Media.prototype); 
 
-Song.prototype.stop = function() {
-   this.isPlaying = false;
-};
 
 Song.prototype.toHTML = function() {
   var htmlString = '<li';

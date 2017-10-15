@@ -5,10 +5,14 @@ var whyNow = new Song("Why Now", "Hibby Town", "4:54");
 var sideways = new Song("Sideways", "The Ranchers", "3:34");
 var kiss = new Song("Kiss", "Price", "3:24");
 
+var babyDriver = new Movie("Baby Driver", 2017, "1:55");
+
 playlist.add(here);
 playlist.add(whyNow);
 playlist.add(sideways);
 playlist.add(kiss);
+playlist.add(babyDriver);
+
 
 var playlistElement = document.getElementById("playlist");
 
