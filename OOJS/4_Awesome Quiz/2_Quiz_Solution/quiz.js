@@ -1,6 +1,3 @@
-// Quiz Prototype 
-
-// Constructor
 function Quiz(questions) {
     this.score = 0;
     this.questions = questions;
@@ -21,4 +18,3 @@ Quiz.prototype.getCurrentQuestion = function() {
 Quiz.prototype.hasEnded = function() {
     return this.currentQuestionIndex >= this.questions.length;
 };
-

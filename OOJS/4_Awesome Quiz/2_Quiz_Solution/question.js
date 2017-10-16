@@ -1,6 +1,3 @@
-// Question Prototype 
-
-// Constructor 
 function Question(text, choices, answer) {
     this.text = text;
     this.choices = choices;
